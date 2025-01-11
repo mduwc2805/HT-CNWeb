@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open bai1.html",
+            "file": "c:\\Users\\Admin.DESKTOP-KMNS09Q\\Documents\\HK2\\WEB\\23697281_NguyenTranMinhDuc\\Tuan01\\bai1.html"
+        }
+    ]
+}

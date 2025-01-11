@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .center1{
+            /*transform from inline to block and center */
+            display: block;
+            margin: auto;
+        }
+        .center2{
+            /* is block and center */
+            margin: auto;
+        }
+        .center3{
+            /* is inline and center */
+            margin: auto;
+        }
+        .styleInput1{
+            width: 100px;
+        }
+        .styleInput2{
+            width: 50px;
+        }
+        .centerText{
+            text-align: center;
+        }
+        .canhLeTraiForInputTag{
+            display: inline-block;
+        }
+        .canhLeTrai{
+            /* is inline and margin left */
+            display: inline-block;
+            width: 20%;
+            margin-left: 20%;
+        }
+        .styleInput3{
+            display: inline-block;
+            width: 10%;
+        }
+        img{
+            box-shadow: 7px 5px rgb(0,0,0,0.2);
+            border-radius: 15px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+        }
+        body{
+            background-color: hsl(195, 65%, 60%);
+        }
+    </style>
+</head>
+<body>
+    <img class="center1" src="Jackson.png" alt="JacksonElectronics">
+    <h1>Registration Form</h1>
+    <div class="centerText">Register your Jackson Electronics product here</div>
+
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="post" autocomplete="off">
+        <div>
+            <label class="canhLeTrai" for="first_name">First Name:</label>
+            <input class="styleInput1" class="canhLeTraiForInputTag" id="first_name" type="text" name="first_name">
+            <label for="last_name">Last Name:</label>
+            <input class="styleInput1" id="last_name" type="text" name="last_name">
+        </div>
+        <div>
+            <label class="canhLeTrai" for="address_1">Address #1:</label>
+            <input class="canhLeTraiForInputTag id="address_1" type="text" name="address_1">
+        </div>
+        <div>
+            <label class="canhLeTrai" for="address_2">Address #2:</label>
+            <input class="canhLeTraiForInputTag" id="address_2" type="text" name="address_2">
+        </div>
+        <div>
+            <label class="canhLeTrai" for="city">City:</label>
+            <input class="canhLeTraiForInputTag" id="ciy" type="text" name="city">
+            <label for="state">State:</label>
+            <input class="styleInput2" type="text" name="state" id="state">
+            <label for="zip">Zip:</label>
+            <input class="styleInput2" type="text" name="zip" id="zip">
+        </div>
+        <hr color="brown" width="60%">
+        <div>
+            <span class="canhLeTrai">Product:</span>
+            <Select Name="product" size="1">
+                <option value="scan_master">Scan Master</option>
+                <option value="option_2">Option 2</option>
+            </Select>
+        </div>
+        <div>
+            <label class="canhLeTrai" for="date_purchased">Date Purchased</label>
+            <input type="date" name="date_purchased" id="date_purchased">
+        </div>
+        <div>
+            <label class="canhLeTrai" for="serial">Serial #:</label>
+            <input type="number" name="serial" id="serial">
+        </div>
+        <div>
+            <span class="canhLeTrai">Used for:</span>
+            <input type="radio" value="home" name="home">
+            <span class="styleInput3">Home</span>
+            <input type="radio" value="educational_institution" name="educational_institution">Educational Institution <br>
+            <span class="canhLeTrai"></span>
+            <input type="radio" value="business" name="business">
+            <span class="styleInput3">Business</span>
+            <input type="radio" value="other" name="other">Other <br>
+            <span class="canhLeTrai"></span>
+            <input type="radio" value="government" name="government">
+            <span class="styleInput3">Government</span>
+        </div>
+        <div>
+            <span class="canhLeTrai">System(check all that apply):</span>
+            <input type="checkbox" value="windows" name="windows">
+            <span class="styleInput3">Windows</span>
+            <input type="checkbox" value="unix" name="unix">UNIX
+            <br>
+            <span class="canhLeTrai"></span>
+            <input type="checkbox" value="macintosh" name="macintosh">
+            <span class="styleInput3">Macintosh</span>
+            <input type="checkbox" name="other" id="other">Other
+        </div>
+        <hr color="brown" width="60%">
+        <div>
+            <label class="canhLeTrai" for="comment">Comments?</label>
+            <textarea name="comment" id="comment" rows="5" cols="20"></textarea>
+        </div>
+        <div>
+            <span class="canhLeTrai"></span>
+            <input type="submit" name="submit" value="Click to register">
+            <input type="reset" name="reset" value="Click to cancel">
+        </div>
+        
+    </form>
+</body>
+</html>
